@@ -86,6 +86,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openAsyncActivity(View view) {
+        Intent intent = new Intent(this,AsyncTaskActivity.class);
+        startActivity(intent);
+    }
+
     public class RunnableTask implements Runnable {
         private int seconds;
 
