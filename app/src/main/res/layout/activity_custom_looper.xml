@@ -35,11 +35,7 @@
         android:onClick="taskB"
         android:layout_marginBottom="16dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="openHandlerThreadTutorial"
-        android:text="HandlerThread Default Tutorial"/>
+
 
 
 </LinearLayout>

@@ -2,6 +2,7 @@ package com.example.threadinglearn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -77,6 +78,7 @@ public class CustomLooperActivity extends AppCompatActivity {
     }
 
     public void openHandlerThreadTutorial(View view) {
-
+        Intent intent = new Intent(this,HandlerThreadActivity.class);
+        startActivity(intent);
     }
 }

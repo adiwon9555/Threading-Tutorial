@@ -81,6 +81,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openHandlerThreadTutorial(View view) {
+        Intent intent = new Intent(this,HandlerThreadActivity.class);
+        startActivity(intent);
+    }
+
     public class RunnableTask implements Runnable {
         private int seconds;
 
