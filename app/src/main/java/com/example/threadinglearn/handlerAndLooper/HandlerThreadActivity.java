@@ -1,4 +1,4 @@
-package com.example.threadinglearn;
+package com.example.threadinglearn.handlerAndLooper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+
+import com.example.threadinglearn.R;
 
 public class HandlerThreadActivity extends AppCompatActivity {
     private static final String TAG = "HandlerThreadActivity";

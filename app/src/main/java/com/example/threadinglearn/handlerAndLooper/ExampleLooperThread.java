@@ -1,8 +1,7 @@
-package com.example.threadinglearn;
+package com.example.threadinglearn.handlerAndLooper;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.os.SystemClock;
 import android.util.Log;
 
 public class ExampleLooperThread extends Thread {

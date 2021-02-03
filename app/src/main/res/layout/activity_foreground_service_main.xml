@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".foregroundService.ForegroundServiceMainActivity">
+
+    <EditText
+        android:id="@+id/editTextForService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text for Service"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Foreground Service"
+        android:layout_marginBottom="16dp"
+        android:onClick="startForegroundService"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Foreground Service"
+        android:layout_marginBottom="30dp"
+        android:onClick="stopForegroundService"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Intent Service"
+        android:layout_marginBottom="16dp"
+        android:onClick="startIntentService"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Intent Service"
+        android:layout_marginBottom="30dp"
+        android:onClick="stopIntentService"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enqueue Work in Job Intent Service"
+        android:onClick="enqueworkInJobIntentService"/>
+
+</LinearLayout>

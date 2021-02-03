@@ -6,7 +6,9 @@ android {
 
     defaultConfig {
         applicationId "com.example.threadinglearn"
-        minSdkVersion 16
+//        minSdkVersion 16
+        //For jobSchedular minSdkVersion version is 21
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

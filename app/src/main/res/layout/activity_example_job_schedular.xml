@@ -4,22 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    tools:context=".asyncTask.AsyncTaskActivity">
-    <ProgressBar
-        android:id="@+id/progress_bar"
-        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:visibility="invisible"
-        tools:visibility="visible" />
+    android:gravity="center"
+    tools:context=".jobSchedular.ExampleJobSchedular">
+
     <Button
-        android:id="@+id/asyncTaskButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="startAsyncTask"
-        android:text="Start" />
+        android:text="Schedule Job"
+        android:onClick="scheduleJob"
+        android:layout_marginBottom="16dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Job"
+        android:onClick="cancelJob"/>
+
+
+
+
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.threadinglearn;
+package com.example.threadinglearn.asyncTask;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
+import com.example.threadinglearn.R;
 
 import java.lang.ref.WeakReference;
 

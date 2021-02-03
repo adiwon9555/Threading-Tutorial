@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".CustomLooperActivity">
+    tools:context=".handlerAndLooper.CustomLooperActivity">
     <Button
         android:id="@+id/startButtton"
         android:layout_width="wrap_content"

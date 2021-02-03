@@ -1,4 +1,4 @@
-package com.example.threadinglearn;
+package com.example.threadinglearn.handlerAndLooper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.os.Message;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.View;
+
+import com.example.threadinglearn.R;
 
 /*What we are trying to achieve is to create a background thread that
 is running continuosly (using looper) and can take tasks via handler in its message queue

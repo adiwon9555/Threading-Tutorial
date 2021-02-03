@@ -5,10 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.threadinglearn.asyncTask.AsyncTaskActivity;
+import com.example.threadinglearn.foregroundService.ForegroundServiceMainActivity;
+import com.example.threadinglearn.handlerAndLooper.CustomLooperActivity;
+import com.example.threadinglearn.handlerAndLooper.HandlerThreadActivity;
+import com.example.threadinglearn.jobSchedular.ExampleJobSchedular;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -77,17 +82,26 @@ public class MainActivity extends AppCompatActivity {
       stopThreadFlag = true;
     }
     public void openCustomLooperActivity(View view){
-        Intent intent = new Intent(this,CustomLooperActivity.class);
+        Intent intent = new Intent(this, CustomLooperActivity.class);
         startActivity(intent);
     }
 
     public void openHandlerThreadTutorial(View view) {
-        Intent intent = new Intent(this,HandlerThreadActivity.class);
+        Intent intent = new Intent(this, HandlerThreadActivity.class);
         startActivity(intent);
     }
 
     public void openAsyncActivity(View view) {
-        Intent intent = new Intent(this,AsyncTaskActivity.class);
+        Intent intent = new Intent(this, AsyncTaskActivity.class);
+        startActivity(intent);
+    }
+    public void openJobSchedular(View view) {
+        Intent intent = new Intent(this, ExampleJobSchedular.class);
+        startActivity(intent);
+    }
+
+    public void openForegroundService(View view) {
+        Intent intent = new Intent(this, ForegroundServiceMainActivity.class);
         startActivity(intent);
     }
 
