@@ -13,7 +13,7 @@ import androidx.core.app.JobIntentService;
 
 //On Android 25 and lower this is a normal IntentService that does Background Task without needing a foreground service(Notification), as there is no such restriction for Background task.
 //In IntentService we need to do background job in foreground service(Notificaiton), which ensures the job completion, irrespetive of device state,
-//but not a good idea, since notification is popped up and when system resource is overloaded it is deferred and starts again in later time, also if all is fine then starts asap.
+//but not a good idea, since notification is popped up but with job intentservice when system resource is overloaded it is deferred and starts again in later time, also if all is fine then starts asap.
 
 //Wake lock is internally handled
 public class JobIntentServiceExample extends JobIntentService {
